@@ -14,3 +14,31 @@
 //	 연도가 4의 배수이면서 100의 배수가 아니거나
 //	 400의 배수이면 윤년~!!!
 //   그렇지 않으면 평년~!!!
+
+
+
+
+// let year = Number(prompt("연도를 입력하세요!"));
+
+// let answer = year % 4 === 0 && year % 100 !== 0 || year % 400 === 0 ? "윤년" : "평년"
+
+// console.log(`${year}년은 ${answer}입니다!`)
+
+
+
+
+// let answer = ""
+// if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+//   answer = "윤년"
+// } else {
+//   answer = "평년"
+// }
+
+
+let year = Number(prompt("연도를 입력하세요!"));
+const answer = document.createElement("h1");
+
+let result = year % 4 === 0 && year % 100 !== 0 || year % 400 === 0 ? "윤년" : "평년"
+
+answer.innerHTML = `${year}년은 ${result}입니다!`
+document.body.appendChild(answer);
